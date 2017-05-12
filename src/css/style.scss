@@ -346,7 +346,9 @@ body{
 
   body{
     overflow: auto;
+    overflow-x: hidden;
   }
+
 
   .top, .sexy_line{
     display: none;
