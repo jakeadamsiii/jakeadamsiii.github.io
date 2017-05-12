@@ -1,4 +1,7 @@
-
+@font-face{
+  font-family: 'Raleway';
+  src: url(../assets/fonts/Raleway-Regular.ttf);
+}
 
 main{
   font-family: Raleway;
@@ -37,7 +40,7 @@ body{
     span{
       font-style: italic;
       font-size: 12px;
-      color: white;
+      color:  #F75D59;
     }
   }
 }
@@ -48,6 +51,27 @@ body{
     height: 150px;
     width: 150px;
   }
+}
+
+.sexy_line{
+    display:block;
+    border:none;
+    width:90%;
+    margin-top: 10px;
+    color:white;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#adadad));
+}
+
+.top{
+  cursor: pointer;
+  position: absolute;
+  left:47%;
+  top:5%;
+  height:60px;
+  width: 60px;
+  transform: rotate(-90deg);
 }
 
 .about-left{
@@ -122,10 +146,11 @@ body{
 .contact-left{
   background: #F9F7F3;
 }
+
 .contact-right{
   background: #ADADAD;
   h2{
-    padding-bottom:20vh;
+    padding-bottom: 10vh;
   }
   a{
     color: rgba(0,0,0,0.8);
@@ -134,7 +159,7 @@ body{
     font-size: 20px;
   }
   h4{
-    padding-top: 10vh;
+    padding-top: 26vh;
   }
   #socialBtns{
     list-style: none;
@@ -212,7 +237,7 @@ body{
 	cursor: pointer;
 	padding: 3% 6%;
 	display: inline-block;
-	margin: 3% 5%;
+	margin: 5% 5%;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -321,6 +346,10 @@ body{
 
   body{
     overflow: auto;
+  }
+
+  .top, .sexy_line{
+    display: none;
   }
 
   .landing-left{
